@@ -1,0 +1,95 @@
+.img-box {
+    column-count: 4;
+    column-gap: 0;
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+}
+.image {
+    max-width: 100%;
+    display: block;
+    width: 320px;
+    height: 210px;
+}
+.image-wropper {
+    display: block;
+    opacity: 0.7;
+    transition: 0.4s;
+    filter: blur(1px);
+}
+.image-wropper + .image-wropper {
+    margin: 3px 0;
+}
+.image-wropper:hover {
+    opacity: 1;
+    /*filter: sepia(1.3);
+    filter: brightness(1.7); 
+    filter: hue-rotate(45deg);
+    filter: blur(1.7);*/
+}
+.second-column {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.third-column {
+    margin-right: 3px;
+}
+body {
+    background-image: url(https://img3.akspic.ru/previews/9/2/5/5/6/165529/165529-nike-kedy-bashmak-belye-svet-360x640.jpg);
+}
+.q1 {
+    filter: hue-rotate(45deg);
+}
+.q2 {
+    filter: sepia(1.3);
+}
+.q3 {
+    filter: grayscale(10);
+}
+.q4 {
+    filter: blur(3px);
+}
+.q5 {
+    filter: brightness(1.7);
+}
+.q6 {
+    filter: contrast(200%);
+}
+.q8 {
+    filter: invert(75%);
+}
+.q9 {
+    filter: saturate(30%);
+}
+@media all and (min-width: 1200px) {
+    .item_link:hover {
+        opacity: 1;
+        transform: scale(1.2) rotate(5deg);
+        z-index: 10;
+        box-shadow: 0 0 200px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .author {
+       border-color: #111;
+    }
+}
+
+@media all and (max-width: 1024px) {
+.img-box {
+    width: 90%;
+    column-count: 3;
+}
+}
+
+@media all and (max-width: 768px) {
+.img-box {
+    width: 100%;
+    column-count: 3;
+}
+}
+
+@media all and (max-width: 480px) {
+.img-box {
+    column-count: 1;
+}
+}
